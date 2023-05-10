@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Ecolog</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4a722d5944.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <div class="top-bar">
+    <p><i class="fa-solid fa-envelope"></i>douaa.chah@gmail.com<p>
+    <p><i class="fa-sharp fa-solid fa-phone-volume" style="color: #ffffff;"></i>+0737785995</p>
+    <div class="logo">Ecolog</div>
+
+    <div class ="menu-bar">   
+     <ul>
+      <li class="active"> <a href="#"><i class="fa fa-home"></i>Accueil</a></li>
+      <li class="active"> <a href="#"><i class="fa fa-user"></i>Accueil</a></li>
+      <li class="active"> <a href="#"><i class="fa fa-edit"></i>Accueil</a></li>
+      <li class="active"> <a href="#"><i class="fa fa-angellist"></i>Accueil</a></li>
+      <li class="active"> <a href="#"><i class="fa fa-clone"></i>Accueil</a></li>
+
+   </ul>
+    <form class="search-form" action="/search" method="get">
+  <input type="text" name="q" placeholder="Rechercher...">
+  <button type="submit">Rechercher</button>
+</form>
+
+  </div>  
+
+  <main>
+    <div class="ads"></div>
+    <div class="ads">
+   <h1>Publicité</h1>
+   <p>Découvrez notre nouveau produit!</p>
+   <a href="#">Acheter maintenant</a>
+</div>
+<div class="ads">
+   <script src="assets/photo1"></script>
+</div>
+
+
+
+
+    <div class="build1">
+     
+    <img id="photo" src="assets/photo1.jpg" onclick="changePhoto()">
+
+    <script>
+    // JavaScript
+   var photos = ["assets/photo1.jpg", "assets/photo2.jpg", "assets/photo3.jpg"];
+   var index = 0;
+
+   function changePhoto() {
+   var photo = document.getElementById("photo");
+   index++;
+   if (index >= photos.length) {
+    index = 0;
+  }
+  photo.src = photos[index];
+  }
+ </script>
+  
+<div>
+<h1> Appartement a louer a Saada   </h1> 
+<p>Bienvenue dans cet appartement blanc exemplaire ! Dès votre entrée, vous serez immédiatement frappé par l'ambiance apaisante et lumineuse qui émane de chaque pièce.
+</p>
+
+
+  <button class="section_btn"> + d'infos</button>
+  </div>
+
+</div>
+<div class="build2">
+     
+    <img id="image" src="assets/imag1.jpg" onclick="changer()">
+
+    <script>
+    // JavaScript
+   var images = ["assets/imag2.jpg","assets/imag3.jpg","assets/imag1.jpg"];
+   var index = 0;
+
+   function changer() {
+   var image = document.getElementById("image");
+   index++;
+   if (index >= images.length) {
+    index = 0;
+  }
+  image.src = images[index];
+  }
+ </script>
+  
+<div>
+<h1> Appartement a louer a Victor Hugo  </h1> 
+<p>2 pièces traversant de 55 m² exposé SUD EST situé au 5ᵉ étage sans ascenseur comprenant :
+un vaste séjour avec cuisine ouverte, une chambre avec dressing, une salle d'eau avec W.C.
+Parfait état. Immeuble ancien, BEL EMPLACEMENT. Copropriété de 90 lots (Pas de procédure
+en cours). 
+</p>
+
+
+  <button class="section_btn"> + d'infos</button>
+  </div>
+
+</div>
+
+<div class="build3">
+     
+    <img id="pic" src="assets/lot1.jpg" onclick="lot()">
+
+    <script>
+    // JavaScript
+   var pics = ["assets/lot1.jpg", "assets/lot2.jpg", "assets/lot3.jpg"];
+   var index = 0;
+
+   function lot() {
+   var pic = document.getElementById("pic");
+   index++;
+   if (index >= pics.length) {
+    index = 0;
+  }
+  pic.src = pics[index];
+  }
+ </script>
+  
+<div>
+<h1> Studio a 50 m pour une personne   </h1> 
+<p>D’une surface de 66m² avec terrasse de 19m², vous serez au rez-de-chaussée côté cour sans passage.
+
+Ce petit cocon accueille aisément 3 à 4 personnes. il y a un ascenseur.
+
+La pièce principale est meublée d’un canapé, d’une télévision, d’une table basse et d’un meuble télé.
+
+La cuisine ouverte est entièrement équipée avec plaques de cuisson, hotte, réfrigérateur, freezer, mi...
+</p>
+
+
+  <button class="section_btn"> + d'infos</button>
+  </div>
+
+</div>
+  </main> 
+  <footer>
+        <!-- votre pied de page ici -->
+        <nav class="pagination">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+        </nav>
+    </footer>
+  </body>
+  </html>

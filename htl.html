@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Informations de la sélection</title>
+    <link rel="stylesheet" type="text/css" href="css20.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Informations de la sélection</h1>
+      <p id="info"></p>
+      <button onclick="afficherInfos()">Afficher les informations</button>
+    </div>
+    <script src="script.js"></script>
+    function afficherInfos() {
+  var select = document.getElementById("select");
+  var option = select.options[select.selectedIndex].value;
+  var info = document.getElementById("info");
+  
+  if (option == "appartement") {
+    info.innerHTML = "Vous avez sélectionné un appartement.";
+  } else if (option == "maison") {
+    info.innerHTML = "Vous avez sélectionné une maison.";
+  } else if (option == "villa") {
+    info.innerHTML = "Vous avez sélectionné une villa.";
+  }
+}
+  </body>
+</html>
+
+
+
